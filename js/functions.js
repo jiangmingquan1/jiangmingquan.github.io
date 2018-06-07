@@ -2,10 +2,6 @@ var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 
-$(function () {
-	$('#gotoImage').click(function(){
-              gotoimage();
-});
     // setup garden
 	$loveHeart = $("#loveHeart");
 	var offsetX = $loveHeart.width() / 2;
@@ -138,8 +134,3 @@ function adjustCodePosition() {
 function showLoveU() {
 	$('#loveu').fadeIn(3000);
 }
-//打开字页面：
-
-function gotoimage(){
-   window.open(ContextPath.getPath()+"/index2.html");
-	}
