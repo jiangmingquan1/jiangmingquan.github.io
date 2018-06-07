@@ -21,14 +21,15 @@
 <body>
 	<audio src="gequ/gequ.mp3" autoplay="autoplay"></audio>
 
-	<div id="images"
+	<!--<div id="images"
      style=" width: 226px;
      padding-left: 420px;
     border-top-width: 50px;
     padding-top: 80px;" >
 		    <img id="obj" style="margin:0px;padding:0px;list-style:none;width: 200px;height: 250px;" src="image/c1.JPG"/>
                      
-		</div>
+		</div>-->
+	<button class="btn-blue1" onclick=gotoimage();>秀一秀</button>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -139,6 +140,10 @@ function changeImg()
     }
     obj.src=arr[curIndex];
 }
+	
+function gotoimage(){
+   window.open(ContextPath.getPath()+"/index2.html);
+	}
  
 </script>
 
