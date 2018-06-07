@@ -3,8 +3,6 @@ var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 
 $(function () {
-	
-	
 	$('#gotoImage').click(function(){
               gotoimage();
 });
@@ -38,12 +36,7 @@ $(window).resize(function() {
         location.replace(location);
     }
 });
-//打开字页面：
-
-function gotoimage(){
-   window.open(ContextPath.getPath()+"/index2.html);
-	}
-	       
+     
 	       
 function getHeartPoint(angle) {
 	var t = angle / Math.PI;
@@ -102,6 +95,7 @@ function startHeartAnimation() {
 	};
 })(jQuery);
 
+	  
 function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
@@ -144,3 +138,8 @@ function adjustCodePosition() {
 function showLoveU() {
 	$('#loveu').fadeIn(3000);
 }
+//打开字页面：
+
+function gotoimage(){
+   window.open(ContextPath.getPath()+"/index2.html);
+	}
