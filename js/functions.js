@@ -141,5 +141,5 @@ function showLoveU() {
 //打开字页面：
 
 function gotoimage(){
-   window.open(ContextPath.getPath()+"/index2.html);
+   window.open(ContextPath.getPath()+"/index2.html");
 	}
