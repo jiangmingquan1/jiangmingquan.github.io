@@ -20,14 +20,7 @@
 
 <body>
 	<audio src="gequ/gequ.mp3" autoplay="autoplay"></audio>
-<div id="images"
-     style=" width: 226px;
-     padding-left: 420px;
-    border-top-width: 50px;
-    padding-top: 80px;" >
-		    <img id="obj" style="margin:0px;padding:0px;list-style:none;width:;width: 200px;height: 250px;" src="image/c1.JPG"/>
-                     
-		</div>
+
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -110,30 +103,7 @@ if (!document.createElement('canvas').getContext) {
 	$("#code").typewriter();
 }
 	
-var curIndex=0;
-//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
-var timeInterval=2000;
-var arr=new Array();
-arr[0]="image/c1.JPG";
-arr[1]="image/c2.JPG";
-arr[2]="image/c3.JPG";
-arr[3]="image/c4.JPG";
-arr[4]="image/c5.JPG";	
-arr[5]="image/c6.JPG";	
-setInterval(changeImg,timeInterval);
-function changeImg()
-{
-    var obj=document.getElementById("obj");
-    if (curIndex==arr.length-1) 
-    {
-        curIndex=0;
-    }
-    else
-    {
-        curIndex+=1;
-    }
-    obj.src=arr[curIndex];
-}
+
  
 </script>
 
