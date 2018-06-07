@@ -1,6 +1,8 @@
+
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
+
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
@@ -32,8 +34,7 @@ $(window).resize(function() {
         location.replace(location);
     }
 });
-     
-	       
+
 function getHeartPoint(angle) {
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
@@ -91,7 +92,6 @@ function startHeartAnimation() {
 	};
 })(jQuery);
 
-	  
 function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
