@@ -3,6 +3,11 @@ var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 
 $(function () {
+	
+	
+	$('#gotoImage').click(function(){
+              gotoimage();
+});
     // setup garden
 	$loveHeart = $("#loveHeart");
 	var offsetX = $loveHeart.width() / 2;
@@ -33,7 +38,13 @@ $(window).resize(function() {
         location.replace(location);
     }
 });
+//打开字页面：
 
+function gotoimage(){
+   window.open(ContextPath.getPath()+"/index2.html);
+	}
+	       
+	       
 function getHeartPoint(angle) {
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
